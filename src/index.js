@@ -17,7 +17,7 @@ let livros = [
     descricao: "Um livro de aventuras",
     edicao: "55",
     autor: "Roberto Nunes",
-    ISBN: "123456789",
+    isbn: "123456789",
   },
 
   {
@@ -26,7 +26,7 @@ let livros = [
     descricao: "Muitas mágias e diversões",
     edicao: "13",
     autor: "Edward Cullen",
-    ISBN: "987654321",
+    isbn: "987654321",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ let livros = [
     descricao: "Comedias e perregues de um adolescente comum",
     edicao: "77",
     autor: "Jaime Kelly",
-    ISBN: "135791113",
+    isbn: "135791113",
   },
 ];
 
@@ -49,7 +49,7 @@ app.post("/livros", (req, res, next) => {
     descricao: req.body.descricao,
     edicao: req.body.edicao,
     autor: req.body.autor,
-    ISBN: req.body.ISBN,
+    isbn: req.body.isbn,
   };
 
   livros.push(livro);
@@ -63,7 +63,7 @@ app.put("/livros", (req, res, next) => {
       livro.descricao = req.body.descricao;
       livro.edicao = req.body.edicao;
       livro.autor = req.body.autor;
-      livro.ISBN = req.body.ISBN;
+      livro.isbn = req.body.isbn;
     }
   });
 
